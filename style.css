@@ -487,6 +487,8 @@ body {
     padding-bottom: 5px;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
+    width: 100%;
 }
 
 #navBar h3 {
