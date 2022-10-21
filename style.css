@@ -397,8 +397,8 @@
 :root {
     --colorBlack: #000000;
     --colorWhite: #ffffff;
-    --colorIvory: #fffff0;
-    --colorSand: #EDDECD;
+    --colorIvory: #fcf5ed;
+    --colorSand: #f2e5da;
 }
 
 /*-- FONTS --*/
@@ -444,42 +444,53 @@ body {
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: var(--colorSand);
 }
 
-#logo img {
-    max-width: 30%;
-    min-width: 300px;
-    object-fit: contain;
-}
-
 .navHead {
-    max-height: 80px;
+    z-index: 20;
+    height: 50px;
     align-items: center;
 }
 
 .newLogoBox {
-    padding-top: 10px;
-    max-width: 180px;
+    padding-top: 12px;
+    padding-bottom: 2px;
+    max-width: 150px;
 }
 
 .navBurger {
     padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navBurger.open {
+    rotate: -90deg;
 }
 
 .burgerBar {
     margin: 2px;
-    height: 5px;
-    width: 30px;
+    height: 4px;
+    width: 26px;
     background-color: var(--colorBlack);
 }
 
 #navBar {
-    display: none;
+    z-index: 10;
+    background-color: var(--colorSand);
+    position: fixed;
+    top: 50px;
+    opacity: 0%;
+    transform: translateY(-200px);
+    transition: all 0.5s ease-in-out;
 }
 
-#navBar.fade {
-    display: flex;
+#navBar.open {
+    opacity: 100%;
+    transform: translateY(0);
 }
 
 #navBar a {
@@ -497,17 +508,21 @@ body {
     font-size: 12px;
 }
 
+#homeGallery {
+    margin-top: 50px;
+}
+
 #homeAbout .textBox {
     max-width: 40%;
     min-width: 300px;
 }
 
-#kontakt {
+#contact {
     margin-top: 20px;
 }
 
 #bottomGallery {
-    background-image: url(./png/bottomGalleryBackground_A.png);
+    background-image: url(./png/bottomGallery_BG_A.png);
     background-position: center;
 }
 
@@ -517,6 +532,10 @@ body {
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+#bottomGallery img {
+    max-height: 350px;
 }
 
 #bottomGallery p {

@@ -1,5 +1,6 @@
 let isNav = false;
 const navBar = document.querySelector("#navBar");
+const navBurger = document.querySelector(".navBurger");
 
 function openHome() {
     window.location = "./index.html";
@@ -17,13 +18,15 @@ function clickBurger() {
 
     if(isNav != true) {
         
-        navBar.classList.toggle('fade');
+        navBar.classList.toggle('open');
         isNav = true;
 
     } else if(isNav == true) {
 
-        navBar.classList.toggle('fade');
+        navBar.classList.toggle('open');
         isNav = false;
 
     }
+    
+    navBurger.classList.toggle('open');
 }
