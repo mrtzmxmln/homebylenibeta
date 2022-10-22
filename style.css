@@ -474,7 +474,7 @@ body {
 .burgerBar {
     margin: 2px;
     height: 4px;
-    width: 26px;
+    width: 24px;
     background-color: var(--colorBlack);
 }
 
@@ -539,24 +539,30 @@ body {
     margin-top: 20px;
 }
 
-#bottomGallery {
-    background-image: url(./png/bottomGallery_BG_A.png);
+#newBottomGallery {
+    background-color: var(--colorSand);
+    background-size: cover;
     background-position: center;
 }
 
-#bottomGallery .imgBox {
-    max-width: 150px;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+.newImgBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--colorIvory);
+    border: 8px solid var(--colorIvory);
+    margin: 10px;
 }
 
-#bottomGallery img {
-    max-height: 350px;
+.newImgBox img {
+    display: flex;
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
 }
 
-#bottomGallery p {
+.newImgBox h3 {
+    font-size: 12px;
     text-align: center;
 }
 
