@@ -450,7 +450,7 @@ body {
     background-color: var(--colorSand);
 }
 
-.navHead {
+#navHead {
     z-index: 20;
     height: 50px;
     align-items: center;
@@ -512,9 +512,27 @@ body {
     margin-top: 50px;
 }
 
-#homeAbout .textBox {
-    max-width: 40%;
-    min-width: 300px;
+.homeAboutHeading {
+    text-align: end;
+}
+
+.homeAboutHeading h3 {
+    padding-bottom: 20px;
+    border-bottom: 8px solid var(--colorSand);
+}
+
+#homeAbout img {
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    object-fit: cover;
+    border-radius: 100px;
+    border: 8px solid var(--colorSand);
+}
+
+#homeAbout .textBlock {
+    max-width: 350px;
 }
 
 #contact {
