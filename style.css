@@ -532,11 +532,16 @@ body {
 }
 
 #homeAbout .textBlock {
-    max-width: 350px;
+    max-width: 320px;
+    text-align: justify;
 }
 
 #contact {
     margin-top: 20px;
+}
+
+#contactImg img {
+    max-width: 50%;
 }
 
 #newBottomGallery {
@@ -581,12 +586,8 @@ body {
 /*-- text things --*/
 .handWritten {
     font-family: RageItalic;
-    font-size: 40px;
+    font-size: 30px;
     color: var(--colorSand);
-}
-
-.textBlock {
-    text-align: justify;
 }
 
 p {
