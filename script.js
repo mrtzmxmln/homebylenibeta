@@ -6,6 +6,10 @@ function openHome() {
     window.location = "./index.html";
 }
 
+function openContact() {
+    window.location = "./contact.html";
+}
+
 function openMail() {
     window.open("mailto:homebyleni@gmx.de?subject=kontakt - home by leni");
 }

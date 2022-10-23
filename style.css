@@ -450,6 +450,10 @@ body {
     background-color: var(--colorSand);
 }
 
+.headMargin {
+    margin-top: 50px;
+}
+
 #navHead {
     z-index: 20;
     height: 50px;
@@ -493,23 +497,13 @@ body {
     transform: translateY(0);
 }
 
-#navBar a {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    width: 100%;
-}
-
 #navBar h3 {
+    width: 100%;
     margin-top: 0px;
     font-weight: 500;
     font-size: 12px;
-}
+    text-align: center;
 
-#homeGallery {
-    margin-top: 50px;
 }
 
 .homeAboutHeading {
@@ -538,10 +532,6 @@ body {
 
 #contact {
     margin-top: 20px;
-}
-
-#contactImg img {
-    max-width: 50%;
 }
 
 #newBottomGallery {
@@ -618,18 +608,14 @@ h5 {
     margin-bottom: 10px;
 }
 
-
-/*-- testing stuff --*/
-.ColorTestBox {
-    height: 50px;
-    width: 200px;
-    border: 2px solid black;
+/*-- contact page --*/
+#contactMain {
+    background-color: lightcoral;
+    max-height: 400px;
 }
 
-#black {
-    background-color: var(--colorBlack);
+#contactImg {
+    max-height: 100%;
+    background-image: url(./jpeg/homeAbout.JPG);
 }
 
-#white {
-    background-color: var(--colorWhite);
-}

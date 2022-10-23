@@ -47,22 +47,27 @@
 
         <!-- navBar -->
         <nav id="navBar" class="fullWidth flex alignCenter p5ToBo">
-            <div class="containerM fullWidth flexRow spaceAround">
-                <a class="fullWidth" href=""><h3>about leni</h3></a>
-                <a class="fullWidth" href=""><h3>roomtour</h3></a>
-                <a class="fullWidth" href=""><h3>contact</h3></a>
+            <div class="containerM fullWidth flexRow spaceAround alignCenter">
+                <h3>about leni</h3>
+                <h3>roomtour</h3>
+                <h3 onclick="openContact()">contact</h3></a>
             </div>
         </nav>
 
     </section>
 
-    <section id="contactMain fullWidth flex alignCenter">
+    <section id="contactMain" class="fullWidth flex alignCenter headMargin">
+
         <div class="containerM fullWidth flexRow alignCenter">
-            <div id="contactImg">
-                <img src="./jpeg/homeAbout.JPG" alt="">
+            <div id="contactImg" class="flex alignCenter">
+                <img class="imgFit" src="./jpeg/homeAbout.JPG" alt="">
             </div>
-            <div id="contactText"></div>
+            <div class="fiftyBox flexColumn alignCenter">
+                <h3 class="fs4">Contact</h3>
+                <p style="transform: translateY(-10px);" class="handWritten">@homebyleni</p>
+            </div>
         </div>
+
     </section>
 
     <script src="./script.js"></script>
