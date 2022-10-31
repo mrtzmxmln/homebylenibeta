@@ -503,31 +503,23 @@ body {
     font-weight: 500;
     font-size: 12px;
     text-align: center;
-
 }
 
-.homeAboutHeading {
-    text-align: end;
-}
-
-.homeAboutHeading h3 {
-    padding-bottom: 20px;
-    border-bottom: 8px solid var(--colorSand);
+.homeAboutText {
+    max-width: 400px;
 }
 
 #homeAbout img {
-    min-height: 150px;
-    max-height: 150px;
-    min-width: 150px;
-    max-width: 150px;
+    width: 200px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 100px;
     border: 8px solid var(--colorSand);
 }
 
-#homeAbout .textBlock {
-    max-width: 320px;
-    text-align: justify;
+@media screen and (max-width: 670px) {
+    #homeAbout img {
+        width: 400px;
+    }
 }
 
 #contact {
@@ -551,9 +543,17 @@ body {
 
 .newImgBox img {
     display: flex;
-    width: 150px;
-    height: 200px;
+    max-height: 230px;
+    width: 100%;
+    max-width: 200px;
     object-fit: cover;
+}
+
+@media screen and (min-width: 670px) {
+    .newImgBox img {
+        max-height: 350px;
+        max-width: 160px;
+    }
 }
 
 .newImgBox h3 {
@@ -583,6 +583,10 @@ body {
 p {
     margin-top: 10px;
     margin-bottom: 5px;
+}
+
+.textFormat {
+    text-align: justify;
 }
 
 /*-- img things --*/

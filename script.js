@@ -32,5 +32,5 @@ function clickBurger() {
 
     }
     
-    navBurger.classList.toggle('open');
+    /* navBurger.classList.toggle('open'); */
 }
