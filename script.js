@@ -6,6 +6,10 @@ function openHome() {
     window.location = "./index.html";
 }
 
+function openAbout() {
+    window.location = "./index.html";
+}
+
 function openContact() {
     window.location = "./contact.html";
 }
