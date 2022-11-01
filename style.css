@@ -620,6 +620,9 @@ h5 {
     margin-bottom: 10px;
 }
 
+/*-- roomtour page --*/
+
+
 /*-- contact page --*/
 .contactImgBox {
     width: 50%;
@@ -632,12 +635,18 @@ h5 {
     object-fit: cover;
 }
 
+.contactTextBox {
+    width: 50%;
+}
+
 @media screen and (min-width: 670px) {
     .contactImgBox img {
         height: 400px;
     }
 }
 
-.contactTextBox {
-    width: 50%;
+@media screen and (max-width: 670px) {
+    .contactTextBox h3 {
+        font-size: 16px;
+    }
 }
