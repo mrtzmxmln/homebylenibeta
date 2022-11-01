@@ -14,6 +14,10 @@ function openContact() {
     window.location = "./contact.html";
 }
 
+function openImpressum() {
+    window.location = "./contact.html#impressum";
+}
+
 function openMail() {
     window.open("mailto:homebyleni@gmx.de?subject=kontakt - home by leni");
 }
