@@ -10,6 +10,10 @@ function openAbout() {
     window.location = "./index.html";
 }
 
+function openRoomtour() {
+    window.open("https://www.instagram.com/stories/highlights/18321466900040779/");
+}
+
 function openContact() {
     window.location = "./contact.html";
 }
