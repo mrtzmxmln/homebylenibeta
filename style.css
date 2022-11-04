@@ -547,6 +547,7 @@ body {
     background-color: var(--colorIvory);
     border: 8px solid var(--colorIvory);
     margin: 5px;
+    transition: all 1s ease-in-out;
 }
 
 .newImgBox img {
@@ -558,6 +559,10 @@ body {
 }
 
 @media screen and (min-width: 670px) {
+    .newImgBox:hover {
+        scale: 1.5;
+    }
+
     .newImgBox img {
         max-height: 250px;
         max-width: 160px;
